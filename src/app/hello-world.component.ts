@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-hello-world',
@@ -11,6 +11,19 @@ import { Component } from '@angular/core';
     `,
   ],
 })
-export class HelloWorldComponent {
-  title = 'Hello World!';
+export class HelloWorldComponent implements OnInit, OnDestroy {
+  title = 'Hello World';
+  autolog: any;
+
+  ngOnInit(): void {
+    this.autolog = setInterval(() => {
+      console.log('Hello');
+    }, 1000);
+  }
+
+  ngOnDestroy(): void {
+    if (this.autolog) {
+      clearInterval(this.autolog);
+    }
+  }
 }
