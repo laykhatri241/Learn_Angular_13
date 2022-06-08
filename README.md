@@ -1,27 +1,56 @@
-# LearningAngular
+#Text Interpolation in Angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> There is only one way binding. Which means the data can only be shown from Component to template.
+  -> We have to follow this: also known as Mustache Syntax
+    {{ <var> }}
+  
+## Things we can do / put in Mustache Syntax
+  1) Text
+  2) Number
+  3) Number Operations
+  4) Function call
+  
+## Things we cannot do
+  1) Assignment (= , +=, -=, *=, /=, %=)
+  2) new, typeof, instanceof
+  3) Chaining Expressions
+  4) Increment or Decrement operator (++ , --)
+  
+## Implementation
 
-## Development server
+### Component
+  
+![image](https://user-images.githubusercontent.com/103558635/172537716-6af4c33a-fee2-4c9c-a15f-723daff84ea4.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  -> 9th Line: 
+  
+String variable stroring a string.
+  
+  -> 11th to 13th Line:
+  
+Function to get current Datetime as string
+  
+### Template
+![image](https://user-images.githubusercontent.com/103558635/172538240-a9e55786-60dd-4b4a-a7d2-5b88a760ec42.png)
 
-## Code scaffolding
+  -> 1st Line:
+  
+Variable output
+  
+  -> 2nd Line:
+  
+Number output
+  
+  -> 3rd Line:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Number Operations output
+  
+  -> 4th Line:
+  
+Calling Function
+  
+### Output
 
-## Build
+![image](https://user-images.githubusercontent.com/103558635/172538531-bb97cccd-ec98-438c-b981-b3c0703b1141.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  
