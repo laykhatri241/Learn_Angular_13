@@ -1,27 +1,22 @@
-# LearningAngular
+# Component Styling
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> Whenever we create any web page. We need styling to make it look better. 
+  -> Styling also helps in Different screen view layouts.
+  -> Styling helps in arranging content in very attractive manner.
+  
+## There are 3 ways to Apply Styling
 
-## Development server
+  1) Setting Styles or stylesUrls 
+  2) Inline Html
+  3) Css Import
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Code
+![image](https://user-images.githubusercontent.com/103558635/172850267-64eb7d6c-a20e-47e3-9f54-4185dbd0edf8.png)
 
-## Code scaffolding
+![image](https://user-images.githubusercontent.com/103558635/172850322-495f4257-de36-4160-aee8-a59e51eefc16.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://user-images.githubusercontent.com/103558635/172850361-c6c6efab-2c49-44d0-9615-2d83e3a33b09.png)
 
-## Build
+### Output
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/103558635/172850510-07619cb0-72f3-4d44-a60f-bd199fac74b9.png)
