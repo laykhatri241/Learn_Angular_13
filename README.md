@@ -11,3 +11,8 @@
   3) Provider (Service)
   4) Template Outlet
 
+### Command to create Component
+  
+    -> ng g c <component_Name>
+    
+![image](https://user-images.githubusercontent.com/103558635/172768103-5bc2c165-e257-40ad-b32f-e3e4f7bd5784.png)
