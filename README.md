@@ -1,27 +1,38 @@
-# LearningAngular
+# Reference Data sharing between parent and child
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> In this method we use ViewChild and ContentChild. To get data from child.
+  
+## Access child variable inside Parent child.
 
-## Development server
+### Child TS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![image](https://user-images.githubusercontent.com/103558635/172784106-466ff588-5a6b-47f9-a4bf-f045a94dd80e.png)
 
-## Code scaffolding
+  -> Add a variable in Child.
+  
+### Parent Templae
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://user-images.githubusercontent.com/103558635/172784454-3d257157-3d87-4127-a73d-3b2ab6d882ce.png)
 
-## Build
+  -> Add Child Component
+  
+### Parent TS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://user-images.githubusercontent.com/103558635/172784719-f689ae88-59f4-4eca-a62a-15c62f78ca6c.png)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  Line 1:
+    Import  "ViewChild" and "AfterViewInit"
+    
+  Line 2:
+    Import your Child Component
+    
+  Line 11:
+    Create @ViewChild property. Name it Child.
+    Pass your Child component into it.
+    
+  Line 13-15:
+    Create Life cycle method AfterViewInit
+    Alert the variable of child component.
+    
+### Output
+![image](https://user-images.githubusercontent.com/103558635/172785154-541c90f1-4f72-41b5-b4a4-566e9b5a0ef8.png)
