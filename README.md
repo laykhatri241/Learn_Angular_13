@@ -1,27 +1,24 @@
-# LearningAngular
+# Template Statement
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> A method which changes the state of variable on any event triggred like click, key, or any event.
+  
+## Template
+![image](https://user-images.githubusercontent.com/103558635/172993066-66a89eb2-d908-4213-810a-973a7e829892.png)
 
-## Development server
+## Component
+![image](https://user-images.githubusercontent.com/103558635/172993103-8b40205d-2d4f-4f9f-8f2b-a90298420afd.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Explanation 
 
-## Code scaffolding
+  Component:
+    Create a Variable which holds boolean value
+    Make a method which toggles the value of that variable
+    
+  Template:
+    Create a button assign the method on click event of the button
+    Display the variable value
+    
+## Output
+![image](https://user-images.githubusercontent.com/103558635/172993333-8b325c67-2290-477e-94e8-ab27d63f15d8.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/103558635/172993347-d490c23a-a723-40dd-80c7-720f510e100f.png)
