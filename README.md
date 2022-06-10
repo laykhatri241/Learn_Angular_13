@@ -1,27 +1,31 @@
-# LearningAngular
+# NG-CONTENT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> It is used to Project content of another component in current Component.
+  -> It is often used used to embbed re-usable components.
+  
+## Child Component Template
+![image](https://user-images.githubusercontent.com/103558635/172991057-a518f775-79c9-4140-b024-13e6a14f42b8.png)
 
-## Development server
+## Parent Component Template
+![image](https://user-images.githubusercontent.com/103558635/172991126-32882a47-df56-4761-a133-2e0bb2165c0f.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Explaination
 
-## Code scaffolding
+### Whole Content
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  Child Line 2:
+    When we use only ng-content, then all the information provided from the parent component is projected directly.
+   
+  Parent Line 2:
+    The Content which will be shown.
+    
+### Specific Content
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  Parent Line 4-5:
+    We have added an extra attribute to the tag. Which will be used by the child to show the content
+    
+  Child Line 5-6:
+    Adding binding in ng-content tag, will only bind the data which was provided in that specific attribute.
+    
+## Output
+![image](https://user-images.githubusercontent.com/103558635/172991504-bf64d6de-c3f0-4e63-8ea4-be2fa60d173f.png)
