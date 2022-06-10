@@ -1,27 +1,26 @@
-# LearningAngular
+# Property Binding
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> This method is used to assign the dynamic values which are stored in Component to Template.
+  -> Its like One way trip, that Value of Component goes to Template.
+  
+## Component
+![image](https://user-images.githubusercontent.com/103558635/172997882-ae8b68d3-a328-4f42-829b-e764d12c8eb2.png)
 
-## Development server
+## Template
+![image](https://user-images.githubusercontent.com/103558635/172997917-11e12550-3ccc-49d0-93f7-221bcbd5e06e.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Explanation
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  Component:
+    Added a variable which holds the part of FavIcon.
+    
+  Template: 
+  
+    Line 1:
+      That is property binding.
+      attribute is covered in [] and assignment to variable of component
+    
+    Line 3:
+      That is not property binding.
+      Dont get confused with it. Its Text interpolation. 
+      You can check Text interpolation branch.
