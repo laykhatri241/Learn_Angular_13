@@ -1,27 +1,33 @@
-# LearningAngular
+# Two way Binding
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> It is used to share data between components.
+  -> It is basically combination of Getters and Setters
+  -> When value is changed from either side, other side value is also updated with the new value.
+  
+## App component
+![image](https://user-images.githubusercontent.com/103558635/173284355-1b78d842-d74c-47e9-a256-863dfc7f28c9.png)
 
-## Development server
+  Created a local variable for counter
+  
+## App template
+![image](https://user-images.githubusercontent.com/103558635/173284422-3e86ebc0-9a2a-4aad-8dd9-d61116fc61c4.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  Import component and Display the value
+  Used special operator for Sending and Getting Value
+  
+## Counter Component
+![image](https://user-images.githubusercontent.com/103558635/173284590-cae6cce3-5eae-41db-938e-62561e4015de.png)
 
-## Code scaffolding
+  ->Create Input and Output variables
+  ->Create 2 methods to increase and decrease value
+  ->Create a method which sends the value to parent
+  
+## Counter Template
+![image](https://user-images.githubusercontent.com/103558635/173284733-804c21a2-f1c5-46a5-8ce9-b19c41b043a9.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  -> Create 2 buttons and assign appropriate methods to it.
+  
+## Output
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/103558635/173284824-8f7cb1bb-6006-419d-bfb9-5fae4f338ffd.png)
+![image](https://user-images.githubusercontent.com/103558635/173284860-e5634832-54cf-4e27-91bf-82c5ef000c03.png)
