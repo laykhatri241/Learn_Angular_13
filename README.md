@@ -1,27 +1,37 @@
-# LearningAngular
+# Custom Attribute Directive
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  We can have our own directive which can perform the custom styling or behaviour when its assigned.
+  
+## Command
 
-## Development server
+  -> ng g d <name>
+  
+  This will create new TS file with boilerplate.
+  And also add the imports in app.modules.ts
+  
+## Directive.ts
+![image](https://user-images.githubusercontent.com/103558635/173501392-e68c2ccb-a423-4786-8eaa-fd1048178cb1.png
+  
+  Line 2:
+    We added ElementRef. This will help us to get direct access to the DOM element within our class
+  
+  Line 4:
+    ByDefault it will have the selector. you can change the selector as per your need. 
+    This represent the name of directive which will be used in HTML tag for binding.
+  
+  Line 7 to 9:
+    Passed a variable of type ElementRef so that we can directly manipulate the element in DOM.
+    changed the property of it.
+  
+## app.component.ts
+![image](https://user-images.githubusercontent.com/103558635/173501952-da205a49-59b5-48dc-9589-fae0ea189548.png)
+  
+  Added a P tag and added the custom directive which we just created.
+  
+## Output
+![image](https://user-images.githubusercontent.com/103558635/173502054-b3e6b395-4131-4333-8731-69d9758a9bc8.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  
+## Extra
+  
+  We can have different behaviours for that directive. 
