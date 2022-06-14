@@ -4,7 +4,7 @@
   
 ## Command
 
-  -> ng g d <name>
+  -> ng g d \<name\>
   
   This will create new TS file with boilerplate.
   And also add the imports in app.modules.ts
