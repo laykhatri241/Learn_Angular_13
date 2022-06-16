@@ -1,20 +1,29 @@
-# LearningAngular
+# Dependency Injeciton
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+  -> When we want to have functionality of another class in our class, we have to create the objects of those type of class in our class.
+  -> Dependency Injection helps us to automatically make object for us when class constructor is called.
 
-## Development server
+## Command to create Service
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  -> ng g s <name>
+  
+## Service.ts
+  
+![image](https://user-images.githubusercontent.com/103558635/173992536-868cad48-c309-4e3d-9f1a-afa0c2b4544a.png)
 
-## Build
+  -> Boilerplate will be provided by the command.
+  
+  Line 9 to 11:
+    created a custom function to log a message with Key and Value.
+  
+## App.ts
+![image](https://user-images.githubusercontent.com/103558635/173992699-fb56b096-afb0-4c8d-a51d-00c4b6d1f9b6.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Attention Here:
-
-I have created branches of each section and they are sequencially named.
-It also consist of README file which will have the Description of the Section.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  Line 12:
+    Pass the private parameter in constructor as type of Service.
+  
+  Line 13 to 16:
+    In NgOnInit(), we have used that service to log the different message
+  
+## Output
+![image](https://user-images.githubusercontent.com/103558635/173993636-2df3b1ee-7eab-45a0-91ad-1502501d9b01.png)
