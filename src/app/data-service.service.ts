@@ -14,11 +14,14 @@ export class DataServiceService {
   };
 
   getData() {
-    return this.http.get('https://icanhazdadoke.com/').pipe(
-      catchError((err) => {
-        console.log(err);
-        return 'Error';
-      })
-    );
+    return this.http
+      .get('https://www.breakingbadapi.com/api/characters/1')
+      .pipe(
+        catchError((err) => {
+          console.log(err);
+          return 'Error';
+        })
+      )
+      .subscribe((res) => console.log(res));
   }
 }
